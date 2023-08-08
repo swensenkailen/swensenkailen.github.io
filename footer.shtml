@@ -1,0 +1,8 @@
+<footer>
+  <div class="image-container-footer" style="display: flex; justify-content: center;">
+    <a class="blur" href="mailto:swensenkailen@gmail.com"><img src="images/mail.png"></a>
+    <a class="blur" href="https://www.linkedin.com/in/kssaudio"><img src="images/in.png"></a>
+    <a class="blur" href="https://github.com/swensenkailen"><img src="images/ghicon.png"></a>
+    <a class="blur" href="https://open.spotify.com/artist/colorworks"><img src="images/spotify.png"></a>
+  </div>
+</footer>

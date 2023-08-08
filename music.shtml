@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <!--#include virtual="header.shtml" -->
+
+    <script src="update_font_size.js"></script>
+    
+    <body>
+      <ul>
+        </a style="text-align, center"><h1 class="large-heading">Colorworks</h1>
+      </ul>
+    </body>
+
+    <!--#include virtual="embed_spotify.shtml" -->
+
+    <body>
+      <ul>
+        <p class="medium-heading"style="text-align: left; margin-left: 100px; margin-right: 100px">
+          The newest iteration of Colorworks was established between 2018 and 2019,
+          bringing on myself as bassist/vocalist, Deno Durant on drums, and Ash Einhorn on keys.
+          2018 started with a bang, as we released our self-titled Colorworks EP, an indie rock
+          music collection consisting of old members and new, and we won
+          a battle of the bands playing music off that record. We've played together all over
+          the PNW, including classic Seattle venues such as The Sunset Tavern, Barboza, Nectar Lounge, Tractor Tavern,
+          The High Dive, and many others. We've since released 2 new EPs a single, and a full-length 
+          album titled Vuja De. Check out the live footage below from our show at Conor Byrne Pub in Ballard, WA!
+        </p>
+      </ul>
+    </body>
+    
+    <!--#include virtual="embed_yt2.shtml" -->
+
+    <body>
+      <ul>
+        </a style="text-align, center"><h1 class="large-heading">The Candyflowers</h1>
+      </ul>
+    </body>
+
+    <!--#include virtual="embed_spotify2.shtml" -->
+
+    <body>
+      <ul>
+        <p class = "medium-heading" style="text-align: left; margin-left: 100px; margin-right: 100px">
+          What started as a casual song-writing project with a good friend (Jesse Quigley) during the pandemic,
+          turned into a fiery, passion-filled musical endeavor that allowed us to showcase our
+          writing and musical style, as well as give us a creative outlet during a less than sublime
+          period of time. The Candyflowers "Mind Folly" EP is an indie rock collection that 
+          seeks to give listeners a bumpin' rock experience with melancholic lyrics that can be 
+          interpreted in whatever way fits the narrative of the listener. Check out our music on <a href="https://open.spotify.com/artist/55IAGDbs3x248WAQrPC2hl" style="text-decoration: none; color: white;"> Spotify! </a>
+        </p>
+      </ul>
+    </body>
+
+    <!--#include virtual="footer.shtml" -->
+
+  </body> 
+</html>

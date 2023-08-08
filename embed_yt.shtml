@@ -1,0 +1,66 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+  #wrapper {
+    position: relative;
+    width: 38vw;
+    height: 45vw;
+    top: 1%;
+    left: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left:10vw;
+    margin-right: 10vw;
+    margin-top: 50px;
+  }
+</style>
+
+<body>
+  <div id="wrapper">
+    <div id="player" style="width: 50vw"></div>
+  </div>
+  <script>
+    // Load the YouTube iFrame API asynchronously
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Create an iFrame player after the API code downloads
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: '3gok2Xxb3g0',
+        playerVars: {
+          mute: 1,
+          autoplay: 1,
+          loop: 1,
+          controls: 1,
+          showinfo: 0,
+          modestbranding: 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // Start playing the video when the player is ready
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    // Loop the video when it ends
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.ENDED) {
+        player.playVideo();
+      }
+    }
+  </script>
+</body>

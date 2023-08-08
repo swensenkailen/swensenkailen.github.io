@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+
+      #wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 2%;
+        left: 3%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+
+    </style>
+
+  </head>
+  <body>
+    
+    <!--#include virtual="header.shtml" -->
+    
+    <script src="update_font_size.js"></script>
+
+    <body style="margin-top:50px;">
+      <ul>
+        <h1 class="large-heading">Cinematic audio</h1>
+      </ul>
+    </body>
+
+
+    <div class="video-grid" style="margin-bottom:50px; width:100vw; height:50vw;">
+
+      <div style="margin-left:25px; margin-right:25px; width:500px; height:300px;">
+        <div id="wrapper"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nC1XEDVwfKU"></iframe> </div>
+
+        <p class="position:relative, small-heading"> Post-splash cinematic sequence building the narrative
+                                        for the game. SFX were created and mixed in Reaper  
+                                        using Omnisphere and Soundly.  
+        </p>
+
+      </div>
+
+      <div style="margin-left:25px; margin-right:25px; width:500px; height:300px;">
+        <div id="wrapper"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VWrO_s9ZMbo"></iframe> </div>
+        <p class="position:relative, small-heading"> Sound effects for Witchpunk pre-gameplay cinematic
+                                        created and mixed using reaper, with foley and modified Soundly assets.
+                                        I used some of these assets and wrote complimentary music to create the game trailer,
+                                        as some sequences were recycled. 
+        </p>
+      </div>
+
+      <div style="margin-left:25px; margin-right:25px; width:500px; height:300px;">
+        <div id="wrapper"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MbXtMdUPjwQ"></iframe> </div>
+        <p class="position:relative, small-heading" > Sound redesign of a League of Legends cinematic 
+                                        with SFX sourced from Soundly and modified in Reaper.
+        </p>
+      </div>
+    </div>
+
+    <ul>
+      <h6 class="medium-heading" style="margin-top:10vw; margin-bottom:0px; font-style:italic"> (Note: All of the following examples come from my game project Witchpunk.) </h6>
+    </ul>
+
+    <body>
+      <ul>
+        <h1 class="extra-large-heading" style="margin-top:80px"> Game Audio - Music</h1>
+      </ul>
+    </body>
+
+    <div style="display:flex; align-items:center; height:20vh;">
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 8vw"> Boss Battle</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Countess - Final Mix.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style= "margin-left: 6vw"> Main Menu Intro</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Main menu - intro.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 6vw"> Main Menu Loop</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Main menu - loop.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+    </div>
+
+    <div style="display:flex; align-items:center; height:20vh; margin-top: 20px;">
+      
+      <div style="margin:auto; width: 45%">
+        <h4 class="medium-heading" style="margin-left: 16vw"> Play Again</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Play Again v1.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div style="margin:auto; width: 45%">
+        <h4 class="medium-heading" style="margin-left: 16vw"> Quit Game</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Quit game v1.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+    </div>
+
+    <body>
+      <ul>
+        <h4 class="large-heading" style="margin-bottom:0px">Witchpunk - Turn up the funk (gameplay music)</h4>
+      </ul>
+    </body>
+
+    <div style="display:flex; align-items:center; height:20vh;">
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 12vw"> Intro</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Turn up the funk v5.6 Intro.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 14vw"> P1</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Turn up the funk v5.6 P1.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 14vw"> P2</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Turn up the funk v5.6 P2.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+
+    </div>
+
+    <div style="display:flex; align-items:center; height:20vh;">
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 14vw"> P3</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Turn up the funk v5.6 P3.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 14vw"> P4</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Turn up the funk v5.6 P4.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 14vw"> P5</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="audio/Witchpunk - Turn up the funk v5.6 P5.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+    </div>
+
+    <div style="margin-top:5vw;">
+      <ul>
+        <p class="medium-heading" style="margin-left:100px; margin-right:100px; margin-top: 0px">After a trial period, we decided to switch from a player 
+          state based music system to a system that randomly chooses one of the 
+          snippets above. This allows for the music to maintain momentum while 
+          also having little to no redundancy due to the length of gameplay. 
+          After the gameplay sequence is completed, the boss battle music from 
+          above plays. All other game states such as end game, main menu, 
+          etc. had music/sfx created to match the tone of the game and the
+          existing music style. 
+        </p>
+      </ul>
+    </div>
+
+
+
+    <ul>
+      </a style="text-align, center; margin-top:20vw;"><h1 class="extra-large-heading">Game Audio - SFX</h1>
+    </ul>
+
+
+    <div style="display:flex; align-items:center; height:20vh;">
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 5vw"> Enemy Laser Start</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="your-audio-file.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 6vw"> Enemy Laser End</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="your-audio-file.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div style="margin:auto; width: 30%">
+        <h4 class="medium-heading" style="margin-left: 9vw"> Boss Laugh</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="your-audio-file.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; height:20vh;">
+      <div style="margin:auto; width: 45%">
+        <h4 class="medium-heading" style="margin-left: 10vw"> Player Charge Weapon</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="your-audio-file.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div style="margin:auto; width: 45%">
+        <h4 class="medium-heading" style="margin-left: 15vw"> Player Spell</h4>
+        <audio controls style="width: 100%; height: 50px;">
+          <source src="your-audio-file.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <!--#include virtual="footer.shtml" -->
+
+  </body> 
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <!--#include virtual="header.shtml" -->
+    
+
+    <!--#include virtual="embed_resume.shtml"-->
+
+    
+    <!--#include virtual="footer.shtml" -->
+
+  </body> 
+</html>

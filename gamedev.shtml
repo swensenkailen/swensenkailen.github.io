@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.2/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <script src="scroller.js"> </script>
+
+    <style>
+      /* Customize the scrollbar's color */
+      .ps__rail-y {
+        background-color: #ccc;
+      }
+      .ps__thumb-y {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+  <!--#include virtual="header.shtml" -->
+
+  <script src="update_font_size.js"></script>
+
+
+    <div class="image-with-description_left" style="margin-left:100px; margin-right:100px;  margin-bottom:100px">
+      <img src="images/mollie.png" style="width:30vw">
+      <div class="container_right">
+        <p class="small-heading" style="margin-left:50px">Witchpunk is a non-stop third-person brawler with focus on gaining speed to deliver devastating attacks to your enemies. 
+          Defeat the tyrants trying to take over Halloween, as Mollie, a skateboarding witch from the streets of Skelecom.</p>
+        <p class="small-heading" style="margin-left:50px"> This game was created as a student project at DigiPen Institute of Technology.</p>
+        <p class="small-heading" style="margin-left:50px"> Find it on <a href="https://store.steampowered.com/app/2205950/Witchpunk/">Steam </a></p>
+      </div>
+    </div>
+  </body>
+
+  <body>
+    <div class="image-with-description_right" style="margin-left:100px; margin-right:100px; margin-bottom:100px">
+      <div class="container_left">
+        <p class="small-heading" >My roles in this project were audio lead, VFX, and gameplay programmer.</p>
+        <p class="small-heading" >As audio lead, I was in charge of making sure every event in the game had audio associated with it, as well as implementing the code to make that happen. Furthermore, I also wrote all music for the game and many of the SFX. </p>
+        <p class="small-heading" >As the VFX programmer for the team, I used Niagara to both create my own custom VFX as well as put assets from VFX artists into motion.</p>
+        <p class="small-heading" >In addition to my other roles on the team, I also built the initial enemy AI systems using UE Behavior Trees, and was involved in building the UI - specifically, working on the audio settings menu and the game splash sequence. </p>
+      </div>
+      <img src="images/galva.png" style="width:30vw">
+    </div>
+  </body>
+    
+    <script src="scroller.js"></script>
+    <script>
+      const ps = new PerfectScrollbar('#my-scroll-container');
+    </script>
+    
+    <div style="display:inline-flex; font-style:italic; margin-bottom:0px; font-size:small; align-items:center;">
+      (drag to scroll through images)
+    </div>
+
+    <div id="my-scroll-container" style="margin-top:0px;">
+      <div class="image-container-scroller" style="display:flex; text-align: center; margin-top: 10px">
+        <div class="wrapper4">
+          <div class="item4"><img src="images/wp1.png" alt="Image 1"></div>
+          <div class="item4"><img src="images/wp2.png" alt="Image 2"></div>
+          <div class="item4"><img src="images/wp4.png" alt="Image 4"></div>
+          <div class="item4"><img src="images/wp3.png" alt="Image 3"></div>
+          <div class="item4"><img src="images/wp7.png" alt="Image 7"></div>
+          <div class="item4"><img src="images/wp5.png" alt="Image 5"></div>
+          <div class="item4"><img src="images/wp6.png" alt="Image 6"></div>
+          <div class="item4"><img src="images/wp8.png" alt="Image 8"></div>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!--#include virtual="footer.shtml" -->
+
+  </body> 
+</html>

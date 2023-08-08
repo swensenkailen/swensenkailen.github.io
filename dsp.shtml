@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.4.9/Tone.js'></script>
+
+    <style>
+      .piano {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .key {
+        box-sizing: border-box;
+        width: 40px;
+        height: 160px;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+      }
+      .white {
+        background-color: white;
+
+        width: 4vw;
+        height: 20vw;
+      }
+      .black {
+        background-color: black;
+        z-index: 1;
+        margin-left: -2vw;
+        width: 2vw;
+        height: 13vw;
+      }
+      .gray {
+        background-color: gray;
+      }
+    </style>>
+  </head>
+
+  <body>
+    
+    <!--#include virtual="header.shtml" -->
+
+    <script src="update_font_size.js"></script>
+
+    <div class="image-with-description_left" style="margin:0px; margin-bottom:50px">
+      <div class="container_right" style="margin-right:20px">
+        <p class="medium-heading" style="font-style:bold; margin-bottom:30px;">3-Band Dynamic Compressor Plug-in </p>
+        <p class="medium-heading" style="font-style:bold; margin-bottom:30px; margin-top:0px">Features:</p>
+        <p class="small-heading" style="margin-left:0px"> Variable crossover frequency band compression </p>
+        <p class="small-heading" style="margin-left:0px"> Low-pass and high-pass filters </p>
+        <p class="small-heading" style="margin-left:0px"> Real-time spectrogram + EQ curves </p>
+        <p class="small-heading" style="margin-left:0px"> Preset manager </p>
+      </div>
+      <img src="images/mbc.png" alt="Image Description" style="width:43vw; height:30vw; margin-right:0px;">
+    </div>
+    
+    <div class="image-with-description_right" style="margin:0px">
+      <img src="images/mverb.png" alt="Image Description" style="width:43vw; height:30vw">
+      <div class="container_left" style="margin-left:20px;">
+        <p class="medium-heading" style="font-style:bold; margin-bottom:30px;">Moorer Reverb Plug-in</p>
+        <p class="medium-heading" style="font-style:bold; margin-bottom:30px; margin-top:0px">Features:</p>
+        <p class="small-heading" style="margin-left:0px; "> Real-time reverb processing </p>
+        <p class="small-heading" style="margin-left:0px; "> Reactive parameters and mix control </p>
+        <p class="small-heading" style="margin-left:0px; "> Audio bypass </p>
+        <p class="small-heading" style="margin-left:0px; "> Waveform monitoring </p>
+
+      </div>
+    </div>
+
+    <div style="display: flex;  justify-content:center; align-items:center; margin-top:1vw;">
+      <p class="extra-large-heading">Web-based Synthesizer</p>
+    </div>
+    
+    <script src="synth.js"></script>
+
+    <h5 class="small-heading" style="position:relative; text-align:center; margin: 10px;"> ADSR </h5>
+    <div style="display: flex;  justify-content:center; align-items:center; margin-bottom:10px; ">
+      <body>
+        <label for="att" class="small-heading"> A: </label>
+        <input type="number" id="att" class="small-heading" min="0" max="1" value="0" step=".1">
+        
+        <label for="dec" class="small-heading"> D: </label>
+        <input type="number"  id="dec" class="small-heading" min="0" max="1" value="0.3" step=".1">
+
+        <label for="suslevel" class="small-heading"> S: </label>
+        <input type="number" id="suslevel" class="small-heading" min="0" max="1" value="0.2" step=".1">
+        
+        <label for="rel" class="small-heading"> R: </label>
+        <input type="number" id="rel" class="small-heading" min="0" max="1" value="0.3" step=".1">
+        
+      </body>   
+    </div>
+
+    <h5 class="small-heading" style="position:relative; text-align:center; margin: 10px;"> Levels </h5>
+    <div style="display: flex;  justify-content:center; align-items:center; margin-bottom:10px; ">
+      <body>
+        <label for="sineLevel" class="small-heading"> Sine: </label>
+        <input type="number" id="sineLevel" class="small-heading" min="0" max="1.0" value="0.4" step=".1">
+
+        <label for="squareLevel" class="small-heading"> Square: </label>
+        <input type="number" id="squareLevel" class="small-heading" min="0" max="1.0" value="0.02" step=".1">
+
+        <label for="triangleLevel" class="small-heading"> Triangle: </label>
+        <input type="number" id="triangleLevel" class="small-heading" min="0" max="1.0" value="0.1" step=".1">
+
+        <label for="sawLevel" class="small-heading"> Sawtooth: </label>
+        <input type="number" id="sawLevel" class="small-heading" min="0" max="1.0" value="0.05" step=".1">
+      </body>   
+    </div>
+
+    <h5 class="small-heading" style="position:relative; text-align:center; margin: 10px;"> Detune </h5>
+    <div style="display: flex;  justify-content:center; align-items:center; margin-bottom:10px; ">
+      <body>
+        <label for="detuneSine" class="small-heading"> Sine: </label>
+        <input type="number" id="detuneSine" class="small-heading" min="-1000" max="1000" value="0" step="1">
+
+        <label for="detuneSquare" class="small-heading"> Square: </label>
+        <input type="number" id="detuneSquare" class="small-heading" min="-1000" max="1000" value="0" step="1">
+
+        <label for="detuneTriangle" class="small-heading"> Triangle: </label>
+        <input type="number" id="detuneTriangle" class="small-heading" min="-1000" max="1000" value="0" step="1">
+
+        <label for="detuneSaw" class="small-heading"> Saw: </label>
+        <input type="number" id="detuneSaw" class="small-heading" min="-1000" max="1000" value="0" step="1">
+      </body>   
+    </div>
+
+
+
+    <body>
+      <div class="piano">
+        <div class="key white" id="C"></div>
+        <div class="key black" id="Csharp"></div>
+        <div class="key white" id="D"></div>
+        <div class="key black" id="Dsharp"></div>
+        <div class="key white" id="E"></div>
+        <div class="key white" id="F"></div>
+        <div class="key black" id="Fsharp"></div>
+        <div class="key white" id="G"></div>
+        <div class="key black" id="Gsharp"></div>
+        <div class="key white" id="A"></div>
+        <div class="key black" id="Asharp"></div>
+        <div class="key white" id="B"></div>
+        <div class="key white" id="C2"></div>
+        <div class="key black" id="Csharp2"></div>
+        <div class="key white" id="D2"></div>
+        <div class="key black" id="Dsharp2"></div>
+        <div class="key white" id="E2"></div>
+        <div class="key white" id="F2"></div>
+        <div class="key black" id="Fsharp2"></div>
+        <div class="key white" id="G2"></div>
+        <div class="key black" id="Gsharp2"></div>
+        <div class="key white" id="A2"></div>
+        <div class="key black" id="Asharp2"></div>
+        <div class="key white" id="B2"></div>
+      </div>
+
+      <div style="display: flex;  justify-content:center; align-items:center; margin-top:10px; ">
+        <body>
+          <label for="delayTime" class="small-heading"> Delay Time: </label>
+          <input type="number" id="delayTime" class="small-heading" min="0" max="1" value="0.5" step=".01">
+  
+          <label for="delayFeedback" class="small-heading"> Feedback: </label>
+          <input type="number" id="delayFeedback" class="small-heading" min="0" max="1" value="0.3" step=".01">
+        </body>   
+      </div>
+
+      <script>
+        // Each key is assigned the ".key" class name, and id with note to play
+        const keys = document.querySelectorAll('.key');
+        // Add listener for mouse up/down on each key
+        keys.forEach((key) => {
+          key.addEventListener('mousedown', () => {
+            key.classList.add('gray');
+            freq = keyFrequencies[key.id]
+            play(freq)
+          });
+          key.addEventListener('mouseup', () => {
+            key.classList.remove('gray');
+            release()
+          });
+        });
+      </script>
+
+    </body>    
+
+    <!--#include virtual="footer.shtml" -->
+
+  </body> 
+</html>

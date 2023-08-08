@@ -1,0 +1,9 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div class="image-container2" style="display: flex; justify-content: center;">
+  <object data="images/resume.pdf#toolbar=0&navpanes=0"  type="application/pdf" width="800" height="1015">
+    <p>Sorry, your browser doesn't support embedded PDFs. You can download the PDF <a href="resume.pdf">here</a>.</p>
+  </object>
+</div>

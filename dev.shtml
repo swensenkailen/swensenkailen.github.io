@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <!--#include virtual="header.shtml" -->
+
+    <script src="update_font_size.js"></script>
+
+    <div style="position: relative;"> 
+      <div class="image-container3" style="display: flex; justify-content: center;">
+        <div class="container_grid2">
+          <div class="item3"><img src="images/mbc.png" alt="Image 1">
+            <div style="position: absolute; top: 53%; left: 50%; transform: translate(-50%, -50%);">
+              <a href="dsp.shtml" style="text-decoration: none; color: white;"><h1 class="extra-large-heading" >DSP</h1></a>
+            </div>
+          </div>
+          <div class="item3"><img src="images/witchpunk.png" alt="Image 2">
+            <div style="position: absolute; top: 53%; left: 50%; transform: translate(-50%, -50%);">
+              <a href="gamedev.shtml" style="text-decoration: none; color: white;"><h1 class="extra-large-heading" >Game Dev</h1></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!--#include virtual="footer.shtml" -->
+
+  </body> 
+</html>

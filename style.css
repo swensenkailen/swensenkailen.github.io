@@ -1,0 +1,440 @@
+
+/* Nice font downloaded from Google Fonts */
+@font-face {
+  font-family: 'SyneMono';
+  src: url('fonts/SyneMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SyneMono-Bold';
+  src: url('fonts/SyneMono-Regular.woff2') format('woff2');
+  font-weight: 1300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SyneMono-SemiBold';
+  src: url('fonts/SyneMono-Regular.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SyneMono-Italic';
+  src: url('fonts/SyneMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Header and footer vertical spacing */
+header, footer {
+  margin: 120px;
+}
+
+/* Body background color and body text font/color */
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'SyneMono';
+
+}
+
+h1 {
+  color: white;
+  font-family: 'SyneMono-Bold';
+  font-size: 6rem;
+}
+
+h2 {
+  color: white;
+  font-family: 'SyneMono-SemiBold';
+  font-size: 6rem;
+}
+
+h3 {
+  color: white;
+  font-family: 'SyneMono-Bold';
+
+  font-size: 5rem;
+}
+
+h4 {
+  color: white;
+  font-family: 'SyneMono-SemiBold';
+  font-size: 5rem;
+}
+
+h5 {
+  color: white;
+  font-family: 'SyneMono-Bold';
+  font-size: 4rem;
+}
+
+h6 {
+  color: white;
+  font-family: 'SyneMono-SemiBold';
+  font-size: 4rem;
+}
+
+.extra-large-heading{
+  font-size: 4vw;
+}
+
+.large-heading{
+  font-size: 4vw;
+}
+
+.medium-heading{
+  font-size: 4vw;
+}
+
+.small-heading{
+  font-size: 4vw;
+}
+
+.extra-small-heading{
+  font-size: 4vw;
+}
+
+/* Paragraph margins + other settings */
+p {
+  font-family: 'SyneMono';
+  text-align: left;
+  font-size: 18px;
+
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+/* Style for the navigation bar */
+ul {
+  list-style-type: none;
+
+  padding: 0px;
+  overflow-x:hidden;
+  background:transparent;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 15px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.navbar {
+
+  display:inline-flex;
+  align-items: center;
+  flex-direction: row;
+
+  max-width:700px;
+}
+
+right {
+  text-align: right;
+  padding:1000;
+}
+
+.make_italic
+{
+  font-style: italic
+}
+
+/* Style for the links when hovered over */
+
+.blur {
+  transition: filter 1.0s;
+}
+
+.blur:hover {
+  filter: blur(4px);
+}
+
+/* Style for the links when active */
+.active {
+  background-color: #000000;
+}
+
+/* Horizontal, same-sized images */
+.image-container-footer {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.image-container-footer img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.image-container2 img {
+  height: 100px;
+  width: 600px;
+  object-fit:contain;
+  margin-right: 10px;
+}
+
+.image-container-scroller img {
+  height: 200px;
+  width: 600px;
+  object-fit:cover;
+  margin: 0px;
+  overflow-x:scroll
+
+}
+
+.image-container3 img {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+object {
+  padding: 150px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 700px;
+  height: 600px;
+}
+
+.container_grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  width: 920px;
+  height: 320px;
+}
+
+.container_grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  width: 920px;
+  height: 320px;
+}
+
+.audio_grid_2x1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  width: 920px;
+  height: 320px;
+}
+
+.item {
+  overflow:hidden;
+}
+
+.item3 {
+  overflow: hidden;
+  filter: blur(2px);
+}
+
+.item3:hover {
+  overflow: hidden;
+  filter: blur(0px);
+}
+
+.item3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item_scroller {
+  overflow:hidden;
+}
+
+.item_scroller img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Horizontal grid of YT vids */
+.video-grid {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  align-items: center;
+}
+
+/* Borderless YT vids */
+iframe {
+  border: none;
+}
+
+.image-with-description_left {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.image-with-description_left img {
+  width: 820px;
+  height: 300px;
+}
+
+
+.image-with-description_right {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.image-with-description_right img {
+  width: 820px;
+  height: 300px;
+}
+
+.description_right {
+  display:inline-flex;
+  flex-direction: column;
+  margin-left: 1550px;
+
+  max-width: 640px;
+
+}
+
+.description_left {
+  display:inline-flex;
+  flex-direction: column;
+  margin-right: 1350px;
+
+  max-width: 640px;
+
+}
+
+
+.wrapper_scroller {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.image-container4 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper4 {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.item4 {
+  flex:none;
+  width: 30%;
+  scroll-snap-align: start;
+}
+
+.item4 img {
+  width: 100%;
+  height: 70%;
+}
+
+.image-with-description-below {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_center {
+
+  display:inline-flex;
+  flex-direction: column;
+
+  max-width:700px;
+}
+
+.container_right {
+
+  display:inline-flex;
+  flex-direction: column;
+
+  max-width:1350px;
+}
+
+.container_left {
+
+  display:inline-flex;
+  flex-direction: column;
+
+  max-width:1350px;
+}
+
+/* keyboard */
+#keyboard-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+}
+
+.white-key {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.black-key {
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  background-color: #000;
+  border: 1px solid #000;
+  z-index: 1;
+}
