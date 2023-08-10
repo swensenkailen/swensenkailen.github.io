@@ -5,7 +5,41 @@
   </head>
   <body>
     
-    <!--#include virtual="header.shtml" -->
+    <style>
+      #background-video {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+      }
+    </style>
+    
+    <header style="padding: 10px 0;">
+    
+      <video id="background-video" autoplay loop muted>
+        <source src="videos/soundwaves.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+      <nav style="margin: 0px;">
+        <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 0px;">
+          <li><a class="blur small-heading" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" href="resume.shtml">Resume</a></li>
+        </ul>
+      </nav>
+    
+      <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
+        <a class="blur" href="https://linktr.ee/kailenswensen">
+          <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
+        </a>
+      </div>
+    </header>
 
     <script src="update_font_size.js"></script>
     
@@ -15,7 +49,11 @@
       </ul>
     </body>
 
-    <!--#include virtual="embed_spotify.shtml" -->
+    <div class="image-container2" style="display: flex; justify-content:center; align-items:center;">
+      <body>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4NsXlz5ZP5PjzdCauXmRPf?utm_source=generator&theme=0" width="60%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </body>
+    </div>
 
     <body>
       <ul>
@@ -32,7 +70,62 @@
       </ul>
     </body>
     
-    <!--#include virtual="embed_yt2.shtml" -->
+    <style>
+      #wrapper {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        height: 40vh;
+    
+      }
+    </style>
+    
+    <body>
+      <div id="wrapper">
+        <div id="player" style="justify-content: center"></div>
+      </div>
+      <script>
+        // Load the YouTube iFrame API asynchronously
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        // Create an iFrame player after the API code downloads
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'inMiqkQoTOI',
+            playerVars: {
+              mute: 1,
+              autoplay: 0,
+              loop: 1,
+              controls: 1,
+              showinfo: 0,
+              modestbranding: 1
+            },
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+    
+        // Start playing the video when the player is ready
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+    
+        // Loop the video when it ends
+        function onPlayerStateChange(event) {
+          if (event.data === YT.PlayerState.ENDED) {
+            player.playVideo();
+          }
+        }
+      </script>
+    </body>
 
     <body>
       <ul>
@@ -40,7 +133,11 @@
       </ul>
     </body>
 
-    <!--#include virtual="embed_spotify2.shtml" -->
+    <div class="image-container2" style="display: flex; justify-content: center;">
+      <body>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/55IAGDbs3x248WAQrPC2hl?utm_source=generator&theme=0" width="60%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </body>
+    </div>
 
     <body>
       <ul>
@@ -55,7 +152,14 @@
       </ul>
     </body>
 
-    <!--#include virtual="footer.shtml" -->
+    <footer>
+      <div class="image-container-footer" style="display: flex; justify-content: center;">
+        <a class="blur" href="mailto:swensenkailen@gmail.com"><img src="images/mail.png"></a>
+        <a class="blur" href="https://www.linkedin.com/in/kssaudio"><img src="images/in.png"></a>
+        <a class="blur" href="https://github.com/swensenkailen"><img src="images/ghicon.png"></a>
+        <a class="blur" href="https://open.spotify.com/artist/colorworks"><img src="images/spotify.png"></a>
+      </div>
+    </footer>
 
   </body> 
 </html>
