@@ -3,6 +3,9 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
+  <script src="update_font_size.js"></script>
+  
   <body>
     
     <style>
