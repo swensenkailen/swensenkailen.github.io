@@ -23,12 +23,12 @@
     
       <nav style="margin-right: 2vw;">
         <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
-          <li><a class="blur small-heading" style="width:4vw;" href="index.html">Home</a></li>
-          <li><a class="blur small-heading" style="width:4vw;" href="about.shtml">About</a></li>
-          <li><a class="blur small-heading" style="width:4vw; justify-content:center;" href="dev.shtml">Dev</a></li>
-          <li><a class="blur small-heading" style="width:4vw;" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur small-heading" style="width:4vw;" href="music.shtml">Music</a></li>
-          <li><a class="blur small-heading" style="width:4vw;" href="resume.shtml">Resume</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" style="width:10vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="resume.shtml">Resume</a></li>
         </ul>
       </nav>
 
