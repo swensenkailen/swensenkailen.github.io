@@ -10,6 +10,7 @@ function updateFontSize() {
 
   var windowWidth = window.innerWidth;
 
+  // Auto resizing for xtra small -> xtra large fonts
   for (var i = 0; i < xl.length; i++) {
     var heading = xl[i];
     var fontSize = parseFloat(window.getComputedStyle(heading).fontSize);

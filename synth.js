@@ -61,14 +61,13 @@ function play(freq) {
   env.gain.exponentialRampToValueAtTime(sustainLevel * maxGain, ctx.currentTime + attack + decay);
   env.gain.setValueAtTime(sustainLevel * maxGain, ctx.currentTime + attack + decay);
 
-
   // Create a DelayNode
   const delay = ctx.createDelay();
-  delay.delayTime.value = dt; // Default delay time in seconds (500ms)
+  delay.delayTime.value = dt; 
 
   // Create a GainNode for the feedback
   const feedbackGain = ctx.createGain();
-  feedbackGain.gain.value = df; // Default feedback level (30%)
+  feedbackGain.gain.value = df; 
 
   // Connect the nodes for the delay feedback loop
   delay.connect(feedbackGain);
@@ -76,9 +75,7 @@ function play(freq) {
 
   // Connect the feedback loop to the destination
   delay.connect(ctx.destination);
-
   env.connect(delay);
-
   env.connect(ctx.destination);
 
   // Create and connect oscillators and gains
@@ -115,7 +112,7 @@ function release() {
     }
 
     env.gain.linearRampToValueAtTime(0, ctx.currentTime + attack + decay + release);
-    env = null; // Reset envelope
+    env = null; 
   }
 }
 
@@ -123,7 +120,7 @@ function stop() {
   if (env) {
     env.gain.cancelScheduledValues(ctx.currentTime);
     env.gain.setValueAtTime(env.gain.value, ctx.currentTime);
-    env.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.1); // Fast release
+    env.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.1); 
     env = null;
   }
 }
