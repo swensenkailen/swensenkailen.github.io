@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-
   <meta http-equiv='cache-control' content='no-cache'> 
   <meta http-equiv='expires' content='0'> 
   <meta http-equiv='pragma' content='no-cache'>
 
   <meta name="description" content="Audio programmer portfolio website for Kailen Swensen">
-  <meta name="keywords" content="Audio, Programmer, Dev, Software Developer, Software, Audio Applications, JUCE, C++, Python, DSP">
+  <meta name="keywords" content="Kailen, Swensen, Audio, Programmer, Dev, Software Developer, Software, Software Engineer, Audio Applications, JUCE, C++, Python, DSP, Game Audio">
   <meta name="author" content="Kailen Swensen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-
-  <script src="update_font_size.js"></script>
 
   <body>
     <style>
@@ -53,8 +50,9 @@
       </div>
     </header>
 
-    <h1 class="large-heading" style="margin-top:0px; margin-bottom:10px; text-align:center; height:0px;">Latest Project</h1>
+    <script src="update_font_size.js"></script>
 
+    <h1 class="large-heading" style="margin-top:0px; margin-bottom:10px; text-align:center; height:0px;">Latest Project</h1>
       <div class="image-with-description_left" style="margin-left:10px; margin-right:10px; margin-top:0px; ">
         <style>
           #wrapper {
@@ -79,13 +77,13 @@
             <div id="player" style="width: 50vw"></div>
           </div>
           <script>
-            // Load the YouTube iFrame API asynchronously
+            // Load the YouTube iFrame API 
             var tag = document.createElement('script');
             tag.src = 'https://www.youtube.com/iframe_api';
             var firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         
-            // Create an iFrame player after the API code downloads
+            // Create an iFrame player 
             var player;
             function onYouTubeIframeAPIReady() {
               player = new YT.Player('player', {
