@@ -20,12 +20,12 @@
     
       <nav style="margin-right: 2vw;">
         <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
-          <li><a class="blur medium-heading" style="width:10vw;" href="index.html">Home</a></li>
-          <li><a class="blur medium-heading" style="width:10vw;" href="about.shtml">About</a></li>
-          <li><a class="blur medium-heading" style="width:10vw; justify-content:center;" href="dev.shtml">Dev</a></li>
-          <li><a class="blur medium-heading" style="width:10vw;" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur medium-heading" style="width:10vw;" href="music.shtml">Music</a></li>
-          <li><a class="blur medium-heading" style="width:10vw;" href="resume.shtml">Resume</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" style="width:10vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" style="width:10vw;" href="resume.shtml">Resume</a></li>
         </ul>
       </nav>
 
@@ -67,7 +67,7 @@
           a battle of the bands playing music off that record. We've played together all over
           the PNW, including classic Seattle venues such as The Sunset Tavern, Barboza, Nectar Lounge, Tractor Tavern,
           The High Dive, and many others. We've since released 2 new EPs, a single, and a full-length 
-          album titled Vuja De. Check out the live footage below from our show at Conor Byrne Pub in Ballard, WA!
+          album titled Vuja De, released in 2023. Check out the live footage below from a recent show at Conor Byrne Pub in Ballard, WA!
         </p>
       </ul>
     </body>
@@ -144,12 +144,12 @@
     <body>
       <ul>
         <p class = "medium-heading" style="text-align: left; margin-left: 100px; margin-right: 100px">
-          What started as a casual song-writing project with a good friend (Jesse Quigley) during the pandemic,
-          turned into a fiery, passion-filled musical endeavor that allowed us to showcase our
-          writing and musical style, as well as give us a creative outlet during a less than sublime
-          period of time. The Candyflowers "Mind Folly" EP is an indie rock collection that 
-          seeks to give listeners a bumpin' rock experience with melancholic lyrics that can be 
-          interpreted in whatever way fits the narrative of the listener. Check out our music on <a href="https://open.spotify.com/artist/55IAGDbs3x248WAQrPC2hl" style="text-decoration: none; color: white;"> Spotify! </a>
+          What started as a casual song-writing project during the pandemic with guitarist/bassist Jesse Quigley,
+          quickly turned into an aspiring musical endeavor. After 6 months of writing and experimenting,
+          The Candyflowers' "Mind Folly" EP emerged as an authentic indie rock compilation, 
+          where vibrant melodies fuse seamlessly with contemplative verses. Our aim is to deliver an 
+          infectious rock experience while weaving introspective lyrics that invite listeners to interpret 
+          them through their own personal narratives. Check out our music on <a href="https://open.spotify.com/artist/55IAGDbs3x248WAQrPC2hl" style="text-decoration: none; color: white;"> Spotify! </a>
         </p>
       </ul>
     </body>
