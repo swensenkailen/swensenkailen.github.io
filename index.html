@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta name="description" content="Audio programmer portfolio website for Kailen Swensen">
+  <meta name="keywords" content="Kailen, Swensen, Audio, Programmer, Dev, Software Developer, Software, Software Engineer, Audio Applications, JUCE, C++, Python, DSP, Game Audio">
+  <meta name="author" content="Kailen Swensen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <body>
+    <style>
+      #background-video {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        z-index: -1;
+      }
+    </style>
+    
+    <header style="padding: 10px 0; margin-bottom: 15vw;">
+    
+      <nav style="margin-right: 2vw;">
+        <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
+          <li><a class="blur small-heading" style="width:4vw;" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" style="width:4vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="resume.shtml">Resume</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <video id="background-video" autoplay loop muted>
+          <source src="videos/soundwaves.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <a class="blur" href="https://linktr.ee/kailenswensen">
+            <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <script src="update_font_size.js"></script>
+
+    <body>
+      
+      <h1 class="large-heading" style="margin-top:0px; margin-bottom:10px; text-align:center; height:100%;">Latest Project</h1>
+        <div class="image-with-description_left" style="margin-left:10px; margin-right:10px; margin-top:0px; ">
+          <style>
+            #wrapper {
+              position: relative;
+              width: 38vw;
+              height: 45vw;
+              top: 1%;
+              left: 1%;
+          
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          
+              margin-left:10vw;
+              margin-right: 10vw;
+              margin-top: 50px;
+            }
+          </style>
+          
+          <body>
+            <div id="wrapper">
+              <div id="player" style="width: 50vw"></div>
+            </div>
+            <script>
+              // Load the YouTube iFrame API 
+              var tag = document.createElement('script');
+              tag.src = 'https://www.youtube.com/iframe_api';
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          
+              // Create an iFrame player 
+              var player;
+              function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                  videoId: '3gok2Xxb3g0',
+                  playerVars: {
+                    mute: 1,
+                    autoplay: 1,
+                    loop: 1,
+                    controls: 1,
+                    showinfo: 0,
+                    modestbranding: 1
+                  },
+                  events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                  }
+                });
+              }
+          
+              // Start playing the video when the player is ready
+              function onPlayerReady(event) {
+                event.target.playVideo();
+              }
+          
+              // Loop the video when it ends
+              function onPlayerStateChange(event) {
+                if (event.data === YT.PlayerState.ENDED) {
+                  player.playVideo();
+                }
+              }
+            </script>
+          </body>
+  
+          <div class="container_right" style = "margin-top:100px; max-width: 70%;">
+            <h3 class="medium-heading">Witchpunk </h3>
+            <h6 class="small-heading" style="margin-top:10px; margin-bottom:10px;">Audio Lead, VFX/Gameplay programmer  </h6>
+            <h3 class="medium-heading" style="font-style:italic; ">99% Funk </h3>
+            <h5 class="small-heading" style="margin-top:0px">DigiPen Institute of Technology </h5>
+            <p class="small-heading" style="margin-left: 0px">Non-stop third-person brawler with focus on gaining speed to deliver devastating attacks to your enemies. 
+                Defeat the tyrants trying to take over Halloween, as Mollie, a skateboarding witch from the streets of Skelecom. </p>
+            <h6 class="medium-heading" style="margin-left: 0px; margin-top: 30px;">Find it on <a href="https://store.steampowered.com/app/2205950/Witchpunk/">Steam </a></h4>
+          </div>
+        </div>
+    </body>
+
+    <footer>
+      <div class="image-container-footer" style="display: flex; justify-content: center;">
+        <a class="blur" href="mailto:swensenkailen@gmail.com"><img src="images/mail.png"></a>
+        <a class="blur" href="https://www.linkedin.com/in/kssaudio"><img src="images/in.png"></a>
+        <a class="blur" href="https://github.com/swensenkailen"><img src="images/ghicon.png"></a>
+        <a class="blur" href="https://open.spotify.com/artist/colorworks"><img src="images/spotify.png"></a>
+      </div>
+    </footer>
+  </body>
+
+</html>
