@@ -4,16 +4,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.2/css/perfect-scrollbar.min.css" rel="stylesheet">
     <script src="scroller.js"> </script>
-
-    <style>
-      /* Customize the scrollbar's color */
-      .ps__rail-y {
-        background-color: #ccc;
-      }
-      .ps__thumb-y {
-        background-color: #666;
-      }
-    </style>
   </head>
   <body>
 
@@ -22,42 +12,47 @@
         position:absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: auto;
         z-index: -1;
       }
     </style>
     
-    <header style="padding: 10px 0;">
+    <header style="padding: 10px 0; margin-bottom: 15vw;">
     
-      <video id="background-video" autoplay loop muted>
-        <source src="videos/soundwaves.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    
-      <nav style="margin: 0px;">
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 0px;">
-          <li><a class="blur small-heading" href="index.html">Home</a></li>
-          <li><a class="blur small-heading" href="about.shtml">About</a></li>
-          <li><a class="blur small-heading" href="dev.shtml">Dev</a></li>
-          <li><a class="blur small-heading" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur small-heading" href="music.shtml">Music</a></li>
-          <li><a class="blur small-heading" href="resume.shtml">Resume</a></li>
+      <nav style="margin-right: 2vw;">
+        <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
+          <li><a class="blur small-heading" style="width:4vw;" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" style="width:4vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="resume.shtml">Resume</a></li>
         </ul>
       </nav>
-    
-      <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
-        <a class="blur" href="https://linktr.ee/kailenswensen">
-          <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
-        </a>
+
+      <div>
+        <video id="background-video" autoplay loop muted>
+          <source src="videos/soundwaves.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <a class="blur" href="https://linktr.ee/kailenswensen">
+            <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
+          </a>
+        </div>
       </div>
     </header>
 
-  <script src="update_font_size.js"></script>
+    <script src="update_font_size.js"></script>
+
+    <p class="extra-large-heading" style="text-align:center;"> Witchpunk</p>
+    <p class="medium-heading" style="text-align:center; margin-bottom:10vw; font-style:italic;"> (Developed in Unreal Engine 4)</p>
 
 
-    <div class="image-with-description_left" style="margin-left:100px; margin-right:100px;  margin-bottom:100px">
-      <img src="images/mollie.png" style="width:30vw">
+    <div class="image-with-description_left" style="margin-left:5vw; margin-right:5vw;  margin-bottom:10vw">
+      <img src="images/mollie.png" style="width:40vw; height: 40vw;">
       <div class="container_right">
         <p class="small-heading" style="margin-left:50px">Witchpunk is a non-stop third-person brawler with focus on gaining speed to deliver devastating attacks to your enemies. 
           Defeat the tyrants trying to take over Halloween, as Mollie, a skateboarding witch from the streets of Skelecom.</p>
@@ -68,14 +63,14 @@
   </body>
 
   <body>
-    <div class="image-with-description_right" style="margin-left:100px; margin-right:100px; margin-bottom:100px">
+    <div class="image-with-description_right" style="margin-left:5vw; margin-right:5vw; margin-bottom:10vw">
       <div class="container_left">
         <p class="small-heading" >My roles in this project were audio lead, VFX, and gameplay programmer.</p>
         <p class="small-heading" >As audio lead, I was in charge of making sure every event in the game had audio associated with it, as well as implementing the code to make that happen. Furthermore, I also wrote all music for the game and many of the SFX. </p>
         <p class="small-heading" >As the VFX programmer for the team, I used Niagara to both create my own custom VFX as well as put assets from VFX artists into motion.</p>
         <p class="small-heading" >In addition to my other roles on the team, I also built the initial enemy AI systems using UE Behavior Trees, and was involved in building the UI - specifically, working on the audio settings menu and the game splash sequence. </p>
       </div>
-      <img src="images/galva.png" style="width:30vw">
+      <img src="images/galva.png" style="width:40vw; height:40vw;">
     </div>
   </body>
     

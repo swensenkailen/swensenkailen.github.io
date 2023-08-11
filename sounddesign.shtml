@@ -28,47 +28,49 @@
         position:absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: auto;
         z-index: -1;
       }
     </style>
     
-    <header style="padding: 10px 0;">
+    <header style="padding: 10px 0; margin-bottom: 15vw;">
     
-      <video id="background-video" autoplay loop muted>
-        <source src="videos/soundwaves.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    
-      <nav style="margin: 0px;">
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 0px;">
-          <li><a class="blur small-heading" href="index.html">Home</a></li>
-          <li><a class="blur small-heading" href="about.shtml">About</a></li>
-          <li><a class="blur small-heading" href="dev.shtml">Dev</a></li>
-          <li><a class="blur small-heading" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur small-heading" href="music.shtml">Music</a></li>
-          <li><a class="blur small-heading" href="resume.shtml">Resume</a></li>
+      <nav style="margin-right: 2vw;">
+        <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
+          <li><a class="blur small-heading" style="width:4vw;" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" style="width:4vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="resume.shtml">Resume</a></li>
         </ul>
       </nav>
-    
-      <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
-        <a class="blur" href="https://linktr.ee/kailenswensen">
-          <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
-        </a>
+
+      <div>
+        <video id="background-video" autoplay loop muted>
+          <source src="videos/soundwaves.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <a class="blur" href="https://linktr.ee/kailenswensen">
+            <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
+          </a>
+        </div>
       </div>
     </header>
     
     <script src="update_font_size.js"></script>
 
-    <body style="margin-top:50px;">
+    <body style="margin:2px;">
       <ul>
         <h1 class="large-heading">Cinematic audio</h1>
       </ul>
     </body>
 
 
-    <div class="video-grid" style="margin-bottom:50px; width:100vw; height:50vw;">
+    <div class="video-grid" style="margin-bottom:30vw; margin-top:15vw; width:100vw; height:120px; ">
 
       <div style="margin-left:25px; margin-right:25px; width:500px; height:300px;">
         <div id="wrapper"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nC1XEDVwfKU"></iframe> </div>
@@ -98,12 +100,12 @@
     </div>
 
     <ul>
-      <h6 class="medium-heading" style="margin-top:10vw; margin-bottom:0px; font-style:italic"> (Note: All of the following examples come from my game project Witchpunk.) </h6>
+      <h6 class="medium-heading" style="margin-top:60px; margin-bottom:0px; font-style:italic"> (Note: All of the following examples come from my game project Witchpunk.) </h6>
     </ul>
 
     <body>
       <ul>
-        <h1 class="extra-large-heading" style="margin-top:80px"> Game Audio - Music</h1>
+        <h1 class="extra-large-heading" style="margin-top:60px"> Game Audio - Music</h1>
       </ul>
     </body>
 
@@ -220,7 +222,7 @@
 
     <div style="margin-top:5vw;">
       <ul>
-        <p class="medium-heading" style="margin-left:100px; margin-right:100px; margin-top: 0px">After a trial period, we decided to switch from a player 
+        <p class="medium-heading" style="margin-left:60px; margin-right:60px; margin-bottom:60px;">After a trial period, we decided to switch from a player 
           state based music system to a system that randomly chooses one of the 
           snippets above. This allows for the music to maintain momentum while 
           also having little to no redundancy due to the length of gameplay. 
@@ -235,7 +237,7 @@
 
 
     <ul>
-      </a style="text-align, center; margin-top:20vw;"><h1 class="extra-large-heading">Game Audio - SFX</h1>
+      </a style="text-align, center; margin-top:40vw;"><h1 class="extra-large-heading">Game Audio - SFX</h1>
     </ul>
 
 

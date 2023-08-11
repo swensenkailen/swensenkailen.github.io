@@ -12,34 +12,36 @@
         position:absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: auto;
         z-index: -1;
       }
     </style>
     
-    <header style="padding: 10px 0;">
+    <header style="padding: 10px 0; margin-bottom: 15vw;">
     
-      <video id="background-video" autoplay loop muted>
-        <source src="videos/soundwaves.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    
-      <nav style="margin: 0px;">
-        <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 0px;">
-          <li><a class="blur small-heading" href="index.html">Home</a></li>
-          <li><a class="blur small-heading" href="about.shtml">About</a></li>
-          <li><a class="blur small-heading" href="dev.shtml">Dev</a></li>
-          <li><a class="blur small-heading" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur small-heading" href="music.shtml">Music</a></li>
-          <li><a class="blur small-heading" href="resume.shtml">Resume</a></li>
+      <nav style="margin-right: 2vw;">
+        <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
+          <li><a class="blur small-heading" style="width:4vw;" href="index.html">Home</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="about.shtml">About</a></li>
+          <li><a class="blur small-heading" style="width:4vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur small-heading" style="width:4vw;" href="resume.shtml">Resume</a></li>
         </ul>
       </nav>
-    
-      <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
-        <a class="blur" href="https://linktr.ee/kailenswensen">
-          <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
-        </a>
+
+      <div>
+        <video id="background-video" autoplay loop muted>
+          <source src="videos/soundwaves.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <a class="blur" href="https://linktr.ee/kailenswensen">
+            <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
+          </a>
+        </div>
       </div>
     </header>
     
@@ -80,7 +82,7 @@
     <body>
       <ul>
 
-        <h1 class="extra-large-heading">
+        <h1 class="extra-large-heading" style="margin-top:15vw;">
           Languages/Tools
         </h1>
 
