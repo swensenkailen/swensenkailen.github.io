@@ -20,12 +20,12 @@
     
       <nav style="margin-right: 2vw;">
         <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
-          <li><a class="blur small-heading" style="width:10vw;" href="index.html">Home</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="about.shtml">About</a></li>
-          <li><a class="blur small-heading" style="width:10vw; justify-content:center;" href="dev.shtml">Dev</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="music.shtml">Music</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="resume.shtml">Resume</a></li>
+          <li><a class="blur medium-heading" style="width:10vw;" href="index.html">Home</a></li>
+          <li><a class="blur medium-heading" style="width:10vw;" href="about.shtml">About</a></li>
+          <li><a class="blur medium-heading" style="width:10vw; justify-content:center;" href="dev.shtml">Dev</a></li>
+          <li><a class="blur medium-heading" style="width:10vw;" href="sounddesign.shtml">Sound Design</a></li>
+          <li><a class="blur medium-heading" style="width:10vw;" href="music.shtml">Music</a></li>
+          <li><a class="blur medium-heading" style="width:10vw;" href="resume.shtml">Resume</a></li>
         </ul>
       </nav>
 
@@ -63,10 +63,10 @@
           The newest iteration of Colorworks was established between 2018 and 2019,
           bringing on myself as bassist/vocalist, Deno Durant on drums, and Ash Einhorn on keys.
           2018 started with a bang, as we released our self-titled Colorworks EP, an indie rock
-          music collection consisting of old members and new, and we won
+          music collection consisting of old members and new, and we then won
           a battle of the bands playing music off that record. We've played together all over
           the PNW, including classic Seattle venues such as The Sunset Tavern, Barboza, Nectar Lounge, Tractor Tavern,
-          The High Dive, and many others. We've since released 2 new EPs a single, and a full-length 
+          The High Dive, and many others. We've since released 2 new EPs, a single, and a full-length 
           album titled Vuja De. Check out the live footage below from our show at Conor Byrne Pub in Ballard, WA!
         </p>
       </ul>
