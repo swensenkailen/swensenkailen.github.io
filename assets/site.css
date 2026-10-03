@@ -284,16 +284,3 @@ figcaption { color: var(--muted); font-size: .95rem; margin-top: 12px; }
   background: var(--glow); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .credit h3 { font-size: 1.5rem; margin-bottom: .2em; }
 @media (max-width: 520px) { .credit { grid-template-columns: 1fr; gap: 8px; } }
-
-/* film entry without a video: a title card the same shape as the video tiles */
-.film-tile {
-  display: grid; place-content: center; justify-items: center; gap: 6px; aspect-ratio: 16 / 9;
-  border-radius: var(--radius); border: 1px solid var(--line); text-decoration: none; color: var(--text);
-  background: radial-gradient(ellipse at 50% 40%, #13202a, #000 75%);
-  transition: border-color .2s;
-}
-.film-tile:hover { border-color: var(--accent); color: var(--text); }
-.film-title { font-family: var(--mono); font-size: 2rem; letter-spacing: .14em; text-transform: uppercase;
-  background: var(--glow); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.film-meta, .film-link { font-family: var(--mono); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.film-link { color: var(--accent); margin-top: 6px; }
