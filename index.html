@@ -1,147 +1,122 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kailen Swensen — Audio Programmer & Sound Designer</title>
+<meta name="description" content="Kailen Swensen is a Seattle-based audio programmer, sound designer and musician specialising in audio plug-ins, DSP and game audio.">
+<meta name="author" content="Kailen Swensen">
+<link rel="canonical" href="https://www.kailenswensen.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kailen Swensen — Audio Programmer & Sound Designer">
+<meta property="og:description" content="Kailen Swensen is a Seattle-based audio programmer, sound designer and musician specialising in audio plug-ins, DSP and game audio.">
+<meta property="og:url" content="https://www.kailenswensen.com/">
+<meta property="og:image" content="https://www.kailenswensen.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/SyneMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Kailen Swensen</a>
+    <nav aria-label="Main"><a href="index.html#work">Work</a><a href="sound-design.html">Sound</a><a href="music.html">Music</a><a href="index.html#about">About</a><a href="images/resume.pdf">Resume</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <canvas aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1><img class="hero-logo" src="img/logo.webp" width="1400" height="231" alt="Kailen Swensen — Audio Programmer // Sound Designer" fetchpriority="high"></h1>
+    <p>I build audio software and make things sound good: DSP and plug-ins in C++/JUCE, game audio in Unreal and Wwise, and a decade of music production and live sound.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="images/resume.pdf">Resume</a>
+      <a class="btn" href="mailto:swensenkailen@gmail.com">Get in touch</a>
+    </div>
+  </div>
+</section>
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
-
-  <meta name="description" content="Audio programmer portfolio website for Kailen Swensen">
-  <meta name="keywords" content="Kailen, Swensen, Audio, Programmer, Dev, Software Developer, Software, Software Engineer, Audio Applications, JUCE, C++, Python, DSP, Game Audio">
-  <meta name="author" content="Kailen Swensen">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <body>
-    <style>
-      #background-video {
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: auto;
-        z-index: -1;
-      }
-    </style>
-    
-    <header style="padding: 10px 0; margin-bottom: 15vw;">
-    
-      <nav style="margin-right: 2vw;">
-        <ul style="list-style: none; padding:0; display: flex; justify-content: center; overflow-x:visible;">
-          <li><a class="blur small-heading" style="width:10vw;" href="index.html">Home</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="about.shtml">About</a></li>
-          <li><a class="blur small-heading" style="width:10vw; justify-content:center;" href="dev.shtml">Dev</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="sounddesign.shtml">Sound Design</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="music.shtml">Music</a></li>
-          <li><a class="blur small-heading" style="width:10vw;" href="resume.shtml">Resume</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <video id="background-video" autoplay loop muted>
-          <source src="videos/soundwaves.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div style="display: flex; justify-content: center; align-items: center;">
-          <a class="blur" href="https://linktr.ee/kailenswensen">
-            <img src="images/kslogo.png" style="max-width: 60vw; max-height: 60vh;">
-          </a>
-        </div>
+<section>
+  <div class="wrap split">
+    <div><button class="yt" type="button" data-id="3gok2Xxb3g0" aria-label="Play video: Witchpunk trailer"><img src="https://i.ytimg.com/vi/3gok2Xxb3g0/hqdefault.jpg" alt="" width="480" height="360"></button></div>
+    <div>
+      <p class="eyebrow">Featured project</p>
+      <h2>Witchpunk</h2>
+      <p class="muted">99% Funk &middot; DigiPen Institute of Technology</p>
+      <p>A non-stop third-person brawler about building speed to deliver devastating attacks. Play as Mollie, a skateboarding witch from the streets of Skelecom, and take down the tyrants trying to take over Halloween.</p>
+      <p>I was <strong>audio lead</strong> (all the music and many of the SFX), plus <strong>VFX and gameplay programmer</strong>.</p>
+      <div class="buttons">
+        <a class="btn primary" href="witchpunk.html">Project details</a>
+        <a class="btn" href="https://store.steampowered.com/app/2205950/Witchpunk/">Play it on Steam</a>
       </div>
-    </header>
+    </div>
+  </div>
+</section>
 
-    <script src="update_font_size.js"></script>
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Work</p>
+      <h2>Selected projects</h2>
+    </div>
+    <div class="grid">
+      <a class="card" href="dsp.html">
+        <img src="img/mbc.webp" width="601" height="425" alt="Multiband compressor plug-in interface" loading="lazy">
+        <div class="body"><h3>Audio plug-ins</h3><p>A 3-band dynamic compressor and a Moorer reverb in C++/JUCE, plus a synth you can play in the browser.</p><span class="more">DSP &rarr;</span></div>
+      </a>
+      <a class="card" href="witchpunk.html">
+        <img src="img/witchpunk.webp" width="1600" height="868" alt="Witchpunk key art" loading="lazy">
+        <div class="body"><h3>Witchpunk</h3><p>Audio lead, VFX and gameplay programming on an Unreal Engine brawler, out on Steam.</p><span class="more">Game dev &rarr;</span></div>
+      </a>
+      <a class="card" href="sound-design.html">
+        <img src="https://i.ytimg.com/vi/nC1XEDVwfKU/hqdefault.jpg" width="480" height="360" alt="Still from the Witchpunk opening cinematic" loading="lazy">
+        <div class="body"><h3>Sound design</h3><p>Cinematic redesigns, an interactive game score, and gameplay SFX.</p><span class="more">Listen &rarr;</span></div>
+      </a>
+      <a class="card" href="music.html">
+        <img src="img/band2.webp" width="1400" height="934" alt="Colorworks, the band" loading="lazy">
+        <div class="body"><h3>Music</h3><p>Bass and vocals in Colorworks, plus The Candyflowers.</p><span class="more">Bands &rarr;</span></div>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <body>
-      
-      <h1 class="large-heading" style="margin-top:0px; margin-bottom:10px; text-align:center; height:100%;">Latest Project</h1>
-        <div class="image-with-description_left" style="margin-left:10px; margin-right:10px; margin-top:0px; ">
-          <style>
-            #wrapper {
-              position: relative;
-              width: 38vw;
-              height: 45vw;
-              top: 1%;
-              left: 1%;
-          
-              display: flex;
-              justify-content: center;
-              align-items: center;
-          
-              margin-left:10vw;
-              margin-right: 10vw;
-              margin-top: 50px;
-            }
-          </style>
-          
-          <body>
-            <div id="wrapper">
-              <div id="player" style="width: 50vw"></div>
-            </div>
-            <script>
-              // Load the YouTube iFrame API 
-              var tag = document.createElement('script');
-              tag.src = 'https://www.youtube.com/iframe_api';
-              var firstScriptTag = document.getElementsByTagName('script')[0];
-              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-          
-              // Create an iFrame player 
-              var player;
-              function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player', {
-                  videoId: '3gok2Xxb3g0',
-                  playerVars: {
-                    mute: 1,
-                    autoplay: 1,
-                    loop: 1,
-                    controls: 1,
-                    showinfo: 0,
-                    modestbranding: 1
-                  },
-                  events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                  }
-                });
-              }
-          
-              // Start playing the video when the player is ready
-              function onPlayerReady(event) {
-                event.target.playVideo();
-              }
-          
-              // Loop the video when it ends
-              function onPlayerStateChange(event) {
-                if (event.data === YT.PlayerState.ENDED) {
-                  player.playVideo();
-                }
-              }
-            </script>
-          </body>
-  
-          <div class="container_right" style = "margin-top:100px; max-width: 70%;">
-            <h3 class="medium-heading">Witchpunk </h3>
-            <h6 class="small-heading" style="margin-top:10px; margin-bottom:10px;">Audio Lead, VFX/Gameplay programmer  </h6>
-            <h3 class="medium-heading" style="font-style:italic; ">99% Funk </h3>
-            <h5 class="small-heading" style="margin-top:0px">DigiPen Institute of Technology </h5>
-            <p class="small-heading" style="margin-left: 0px">Non-stop third-person brawler with focus on gaining speed to deliver devastating attacks to your enemies. 
-                Defeat the tyrants trying to take over Halloween, as Mollie, a skateboarding witch from the streets of Skelecom. </p>
-            <h6 class="medium-heading" style="margin-left: 0px; margin-top: 30px;">Find it on <a href="https://store.steampowered.com/app/2205950/Witchpunk/">Steam </a></h4>
-          </div>
-        </div>
-    </body>
-
-    <footer>
-      <div class="image-container-footer" style="display: flex; justify-content: center;">
-        <a class="blur" href="mailto:swensenkailen@gmail.com"><img src="images/mail.png"></a>
-        <a class="blur" href="https://www.linkedin.com/in/kssaudio"><img src="images/in.png"></a>
-        <a class="blur" href="https://github.com/swensenkailen"><img src="images/ghicon.png"></a>
-        <a class="blur" href="https://open.spotify.com/artist/colorworks"><img src="images/spotify.png"></a>
-      </div>
-    </footer>
-  </body>
-
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>Hello!</h2>
+      <p>I'm an audio programmer, sound designer and musician based in Seattle, WA.</p>
+      <p>I have a BS in Computer Science and Digital Audio and an AS in Audio Engineering Technology. I specialise in audio applications and game audio, and I've spent over a decade in music production and live sound.</p>
+      <p>In my free time you'll catch me dabbling in ML, writing music, or playing shows with my band Colorworks.</p>
+      <h3 style="margin-top:1.6em">Languages &amp; tools</h3>
+      <ul class="tags">
+        <li>C++</li><li>C</li><li>JUCE</li><li>Python</li><li>Unreal Engine</li><li>Wwise</li><li>Pure Data</li><li>Reaper</li><li>Pro Tools</li>
+      </ul>
+    </div>
+    <div class="about-photos">
+      <img src="img/me.webp" width="758" height="758" alt="Kailen singing on stage" loading="lazy">
+      <img src="img/me2.webp" width="800" height="803" alt="Portrait of Kailen" loading="lazy">
+      <img class="wide" src="img/band.webp" width="1400" height="934" alt="Kailen with Colorworks" loading="lazy">
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="social">
+      <a href="mailto:swensenkailen@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.1L4.3 7H4v.4l8 5.3 8-5.3V7h-.3z"/></svg>Email</a>
+      <a href="https://www.linkedin.com/in/kssaudio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg>LinkedIn</a>
+      <a href="https://github.com/swensenkailen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.26.8-.58v-2.04c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.33-1.77-1.33-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
+      <a href="https://open.spotify.com/artist/4NsXlz5ZP5PjzdCauXmRPf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zm5.05 15.87a.69.69 0 0 1-.94.23c-2.58-1.58-5.83-1.93-9.66-1.06a.69.69 0 1 1-.3-1.34c4.18-.96 7.78-.55 10.67 1.22.32.2.43.62.23.95zm1.35-3a.86.86 0 0 1-1.18.28c-2.95-1.81-7.45-2.34-10.94-1.28a.86.86 0 1 1-.5-1.65c3.99-1.21 8.95-.62 12.34 1.46.4.25.53.78.28 1.19zm.12-3.13C14.98 8.64 9.15 8.45 5.78 9.47a1.03 1.03 0 1 1-.6-1.97c3.87-1.17 10.3-.95 14.36 1.46a1.03 1.03 0 0 1-1.05 1.78z"/></svg>Spotify</a>
+      <a href="images/resume.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm7 1.5V9h5.5zM8 13h8v1.5H8zm0 3.5h8V18H8z"/></svg>Resume</a>
+    </div>
+    <small>&copy; <span id="y">2026</span> Kailen Swensen &middot; Seattle, WA</small>
+  </div>
+</footer>
+</body>
 </html>
