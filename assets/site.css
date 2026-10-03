@@ -267,3 +267,9 @@ figcaption { color: var(--muted); font-size: .95rem; margin-top: 12px; }
   box-shadow: 0 10px 40px -10px rgb(79 209 232 / .6);
 }
 .wip-text { max-width: 520px; color: var(--text); text-shadow: 0 1px 10px #000; font-size: 1rem; }
+
+/* hero: logo and buttons centred, no tagline */
+.hero .wrap { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hero h1 { margin: 0; }
+.hero-logo { margin-inline: auto; margin-bottom: 8px; }
+.hero-buttons { justify-content: center; }
