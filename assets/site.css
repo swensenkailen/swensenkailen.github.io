@@ -248,7 +248,7 @@ figcaption { color: var(--muted); font-size: .95rem; margin-top: 12px; }
   color: var(--text); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; background: var(--surface); }
 .jump a:hover { border-color: var(--accent); }
 .disc { list-style: none; padding: 0; margin: 18px 0 0; border-top: 1px solid var(--line); }
-.disc li { display: grid; grid-template-columns: 3.5em 1fr auto; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+.disc li { display: grid; grid-template-columns: 5.2em 1fr auto; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
 .disc .yr { font-family: var(--mono); color: var(--accent); }
 .disc .kind { font-family: var(--mono); font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); align-self: center; }
 .guest figcaption strong { color: var(--text); }
