@@ -1,4 +1,4 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>
-<link rel="canonical" href="https://www.kailenswensen.com/dsp.html"><meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=dsp.html"><script>location.replace("dsp.html")</script>
-</head><body><a href="dsp.html">This page has moved.</a></body></html>
+<link rel="canonical" href="https://www.kailenswensen.com/plugins.html"><meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=plugins.html"><script>location.replace("plugins.html" + ("plugins.html".includes("#") ? "" : location.hash))</script>
+</head><body><a href="plugins.html">This page has moved.</a></body></html>

@@ -1,4 +1,4 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>
 <link rel="canonical" href="https://www.kailenswensen.com/witchpunk.html"><meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=witchpunk.html"><script>location.replace("witchpunk.html")</script>
+<meta http-equiv="refresh" content="0; url=witchpunk.html"><script>location.replace("witchpunk.html" + ("witchpunk.html".includes("#") ? "" : location.hash))</script>
 </head><body><a href="witchpunk.html">This page has moved.</a></body></html>

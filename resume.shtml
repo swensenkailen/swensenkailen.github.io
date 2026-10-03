@@ -1,4 +1,4 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>
 <link rel="canonical" href="https://www.kailenswensen.com/images/resume.pdf"><meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=images/resume.pdf"><script>location.replace("images/resume.pdf")</script>
+<meta http-equiv="refresh" content="0; url=images/resume.pdf"><script>location.replace("images/resume.pdf" + ("images/resume.pdf".includes("#") ? "" : location.hash))</script>
 </head><body><a href="images/resume.pdf">This page has moved.</a></body></html>

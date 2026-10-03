@@ -4,27 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kailen Swensen — Audio Programmer & Sound Designer</title>
-<meta name="description" content="Kailen Swensen is a Seattle-based audio programmer, sound designer and musician specialising in audio plug-ins, DSP and game audio.">
+<meta name="description" content="Kailen Swensen is a Seattle audio programmer, plugin developer and musician. Founder of lyd audio, formerly of Loft Audio Plugins.">
 <meta name="author" content="Kailen Swensen">
 <link rel="canonical" href="https://www.kailenswensen.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kailen Swensen — Audio Programmer & Sound Designer">
-<meta property="og:description" content="Kailen Swensen is a Seattle-based audio programmer, sound designer and musician specialising in audio plug-ins, DSP and game audio.">
+<meta property="og:description" content="Kailen Swensen is a Seattle audio programmer, plugin developer and musician. Founder of lyd audio, formerly of Loft Audio Plugins.">
 <meta property="og:url" content="https://www.kailenswensen.com/">
 <meta property="og:image" content="https://www.kailenswensen.com/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/SyneMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js" defer></script>
+<link rel="stylesheet" href="assets/site.css?v=3">
+<script src="assets/site.js?v=3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html">Kailen Swensen</a>
-    <nav aria-label="Main"><a href="index.html#work">Work</a><a href="sound-design.html">Sound</a><a href="music.html">Music</a><a href="index.html#about">About</a><a href="images/resume.pdf">Resume</a></nav>
+    <nav aria-label="Main"><a href="index.html#work">Work</a><a href="plugins.html">Plugins</a><a href="sound-design.html">Sound</a><a href="music.html">Music</a><a href="index.html#about">About</a><a href="images/resume.pdf">Resume</a></nav>
   </div>
 </header>
 <main id="main">
@@ -32,7 +32,7 @@
   <video class="hero-video" muted loop playsinline aria-hidden="true" poster="video/soundwaves-poster.webp" data-webm="video/soundwaves.webm" data-mp4="video/soundwaves.mp4"></video>
   <div class="wrap">
     <h1><img class="hero-logo" src="img/logo.webp" width="1400" height="231" alt="Kailen Swensen — Audio Programmer // Sound Designer" fetchpriority="high"></h1>
-    <p>I build audio software and make things sound good: DSP and plug-ins in C++/JUCE, game audio in Unreal and Wwise, and a decade of music production and live sound.</p>
+    <p>I build audio plug-ins and make things sound good. I'm currently building <strong>lyd audio</strong>, my own plug-in line. Before that I was a plug-in developer at Loft Audio Plugins and an audio lead in games, and I play bass in Seattle bands.</p>
     <div class="buttons">
       <a class="btn primary" href="#work">See my work</a>
       <a class="btn" href="images/resume.pdf">Resume</a>
@@ -43,17 +43,18 @@
 
 <section>
   <div class="wrap split">
-    <div><button class="yt" type="button" data-id="3gok2Xxb3g0" aria-label="Play video: Witchpunk trailer"><img src="https://i.ytimg.com/vi/3gok2Xxb3g0/hqdefault.jpg" alt="" width="480" height="360"></button></div>
+    <a href="https://www.lydaudio.com/bitronix" class="panel-shot"><img src="img/bitronix.webp" width="808" height="472" alt="The Bitronix plug-in panel, with its CRT oscilloscope screen"></a>
     <div>
-      <p class="eyebrow">Featured project</p>
-      <h2>Witchpunk</h2>
-      <p class="muted">99% Funk &middot; DigiPen Institute of Technology</p>
-      <p>A non-stop third-person brawler about building speed to deliver devastating attacks. Play as Mollie, a skateboarding witch from the streets of Skelecom, and take down the tyrants trying to take over Halloween.</p>
-      <p>I was <strong>audio lead</strong> (all the music and many of the SFX), plus <strong>VFX and gameplay programmer</strong>.</p>
+      <p class="eyebrow">Featured &middot; lyd audio</p>
+      <h2>Bitronix</h2>
+      <p class="muted">BX-1 &middot; bit crusher / downsampler / wavefolder / noise</p>
+      <p>Break a signal four ways and watch it happen. It crushes from 32 bits down to 2, downsamples up to 50&times;, adds a sine wavefolder and four kinds of digital noise, then gives you a speaker sim and a width control to put the wreckage where you want it.</p>
+      <p>A CRT screen switches between an oscilloscope, a vectorscope and a 3D spectrum, so you can see the folding happen. The fold is a sine fold with antialiasing, measured 7&nbsp;dB cleaner than a plain fold, and at zero it is bit-for-bit bypassed.</p>
       <div class="buttons">
-        <a class="btn primary" href="witchpunk.html">Project details</a>
-        <a class="btn" href="https://store.steampowered.com/app/2205950/Witchpunk/">Play it on Steam</a>
+        <a class="btn primary" href="https://www.lydaudio.com/bitronix">Bitronix on lydaudio.com</a>
+        <a class="btn" href="plugins.html">All plug-in work</a>
       </div>
+      <p class="note">Coming soon &middot; Windows VST3 + standalone</p>
     </div>
   </div>
 </section>
@@ -62,24 +63,32 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Work</p>
-      <h2>Selected projects</h2>
+      <h2>Selected work</h2>
     </div>
     <div class="grid">
-      <a class="card" href="dsp.html">
-        <img src="img/mbc.webp" width="601" height="425" alt="Multiband compressor plug-in interface" loading="lazy">
-        <div class="body"><h3>Audio plug-ins</h3><p>A 3-band dynamic compressor and a Moorer reverb in C++/JUCE, plus a synth you can play in the browser.</p><span class="more">DSP &rarr;</span></div>
+      <a class="card" href="plugins.html#lyd">
+        <img src="img/oyeblikk.webp" width="808" height="496" alt="The Øyeblikk delay plug-in panel" loading="lazy">
+        <div class="body"><p class="tag">Now</p><h3>lyd audio</h3><p>My plug-in company. First up are Bitronix, the Goose synth and the Øyeblikk delay.</p><span class="more">Plug-ins &rarr;</span></div>
+      </a>
+      <a class="card" href="plugins.html#loft">
+        <img class="contain" src="img/tape-mini.webp" width="547" height="529" alt="Loft Audio Plugins' TAPE-MINI tape saturator" loading="lazy">
+        <div class="body"><p class="tag">Previously</p><h3>Loft Audio Plugins</h3><p>Audio plug-in developer at a small company making effects “for artists, by artists, with artists.”</p><span class="more">Plug-ins &rarr;</span></div>
       </a>
       <a class="card" href="witchpunk.html">
         <img src="img/witchpunk.webp" width="1600" height="868" alt="Witchpunk key art" loading="lazy">
-        <div class="body"><h3>Witchpunk</h3><p>Audio lead, VFX and gameplay programming on an Unreal Engine brawler, out on Steam.</p><span class="more">Game dev &rarr;</span></div>
+        <div class="body"><p class="tag">Game</p><h3>Witchpunk</h3><p>Audio lead, VFX and gameplay programming on an Unreal Engine brawler, out on Steam.</p><span class="more">Game dev &rarr;</span></div>
       </a>
       <a class="card" href="sound-design.html">
         <img src="https://i.ytimg.com/vi/nC1XEDVwfKU/hqdefault.jpg" width="480" height="360" alt="Still from the Witchpunk opening cinematic" loading="lazy">
-        <div class="body"><h3>Sound design</h3><p>Cinematic redesigns, an interactive game score, and gameplay SFX.</p><span class="more">Listen &rarr;</span></div>
+        <div class="body"><p class="tag">Audio</p><h3>Sound design</h3><p>Cinematic redesigns, an interactive game score, and gameplay SFX.</p><span class="more">Listen &rarr;</span></div>
       </a>
       <a class="card" href="music.html">
-        <img src="img/band2.webp" width="1400" height="934" alt="Colorworks, the band" loading="lazy">
-        <div class="body"><h3>Music</h3><p>Bass and vocals in Colorworks, plus The Candyflowers.</p><span class="more">Bands &rarr;</span></div>
+        <img src="img/band2.webp" width="1400" height="934" alt="Kailen with bandmates" loading="lazy">
+        <div class="body"><p class="tag">Music</p><h3>Bands &amp; sessions</h3><p>Bass with Joyla Red and Colorworks, The Candyflowers, and session work for other artists.</p><span class="more">Music &rarr;</span></div>
+      </a>
+      <a class="card" href="plugins.html#synth">
+        <img src="img/mbc.webp" width="601" height="425" alt="Multiband compressor plug-in interface" loading="lazy">
+        <div class="body"><p class="tag">DSP</p><h3>Earlier DSP &amp; a web synth</h3><p>A multiband compressor, a Moorer reverb, and a synth you can play in the browser.</p><span class="more">Try it &rarr;</span></div>
       </a>
     </div>
   </div>
@@ -90,9 +99,9 @@
     <div>
       <p class="eyebrow">About</p>
       <h2>Hello!</h2>
-      <p>I'm an audio programmer, sound designer and musician based in Seattle, WA.</p>
-      <p>I have a BS in Computer Science and Digital Audio and an AS in Audio Engineering Technology. I specialise in audio applications and game audio, and I've spent over a decade in music production and live sound.</p>
-      <p>In my free time you'll catch me dabbling in ML, writing music, or playing shows with my band Colorworks.</p>
+      <p>I'm an audio programmer, plug-in developer and musician based in Seattle, WA.</p>
+      <p>I have a BS in Computer Science and Digital Audio from DigiPen Institute of Technology and an AS in Audio Engineering Technology. I build audio software in C++ and JUCE: first at Loft Audio Plugins, and now at lyd audio, my own plug-in line. Before that I was audio lead on the game Witchpunk.</p>
+      <p>I've spent over a decade in music production and live sound. Off the clock you'll find me playing bass with Joyla Red, recording for other artists, or dabbling in ML.</p>
       <h3 style="margin-top:1.6em">Languages &amp; tools</h3>
       <ul class="tags">
         <li>C++</li><li>C</li><li>JUCE</li><li>Python</li><li>Unreal Engine</li><li>Wwise</li><li>Pure Data</li><li>Reaper</li><li>Pro Tools</li>
@@ -101,7 +110,7 @@
     <div class="about-photos">
       <img src="img/me.webp" width="758" height="758" alt="Kailen singing on stage" loading="lazy">
       <img src="img/me2.webp" width="800" height="803" alt="Portrait of Kailen" loading="lazy">
-      <img class="wide" src="img/band.webp" width="1400" height="934" alt="Kailen with Colorworks" loading="lazy">
+      <img class="wide" src="img/band.webp" width="1400" height="934" alt="Kailen with bandmates" loading="lazy">
     </div>
   </div>
 </section>
