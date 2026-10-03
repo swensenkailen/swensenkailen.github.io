@@ -276,3 +276,11 @@ figcaption { color: var(--muted); font-size: .95rem; margin-top: 12px; }
 .site-footer { padding-block: 32px; }
 .site-footer .wrap { justify-content: center; }
 .panel-shot.contain-bg img { max-height: 460px; width: auto; margin-inline: auto; }
+
+/* film credit */
+.credit { display: grid; grid-template-columns: auto 1fr; gap: 24px; margin-top: 24px; padding: 24px 28px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); max-width: 820px; }
+.credit-year { font-family: var(--mono); font-size: 1.6rem; line-height: 1; padding-top: 4px;
+  background: var(--glow); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.credit h3 { font-size: 1.5rem; margin-bottom: .2em; }
+@media (max-width: 520px) { .credit { grid-template-columns: 1fr; gap: 8px; } }
