@@ -275,3 +275,4 @@ figcaption { color: var(--muted); font-size: .95rem; margin-top: 12px; }
 .hero-buttons { justify-content: center; }
 .site-footer { padding-block: 32px; }
 .site-footer .wrap { justify-content: center; }
+.panel-shot.contain-bg img { max-height: 460px; width: auto; margin-inline: auto; }
