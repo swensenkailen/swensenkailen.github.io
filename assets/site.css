@@ -83,8 +83,10 @@ p { margin: 0 0 1em; }
 }
 .nav nav a:hover, .nav nav a[aria-current="page"] { color: var(--text); background: var(--surface-2); }
 @media (max-width: 560px) {
-  .nav { padding-block: 10px; }
-  .nav nav { width: 100%; justify-content: space-between; }
+  /* the name would wrap above the links here; the hero already shows it */
+  .brand { display: none; }
+  .nav { padding-block: 10px; justify-content: center; }
+  .nav nav { width: 100%; justify-content: space-around; }
   .nav nav a { padding: 6px 6px; font-size: .85rem; }
 }
 
