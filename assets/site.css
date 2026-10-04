@@ -286,3 +286,6 @@ figcaption { color: var(--muted); font-size: .95rem; margin-top: 12px; }
   background: var(--glow); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .credit h3 { font-size: 1.5rem; margin-bottom: .2em; }
 @media (max-width: 520px) { .credit { grid-template-columns: 1fr; gap: 8px; } }
+
+/* About: a single portrait */
+.about-photo img { width: 100%; max-width: 460px; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); margin-inline: auto; }
